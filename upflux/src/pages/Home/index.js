@@ -17,7 +17,7 @@ class Home extends Component {
         <Header />
         <h2>Agendamentos</h2>
 
-        <a href="/Cadastro"><button className="BotaoPadrao">AGENDAR</button></a>
+        <a className="botao" href="/Cadastro"><button className="BotaoPadrao">AGENDAR</button></a>
         <CorpoHome >
 
         </CorpoHome>

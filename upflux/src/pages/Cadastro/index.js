@@ -8,15 +8,12 @@ import * as firebase from 'firebase'
 import { BsFillTrashFill } from "react-icons/bs";
 
 const schema = Yup.object().shape({
-  Telefone: Yup.string().required('Telefone é obrigatória!'),
-  CEP: Yup.string(),
-  compĺemento: Yup.string(),
-  troco: Yup.string(),
-  numero: Yup.number(),
-  cidade: Yup.string().required('Escolha uma Cidade!'),
-  formaPagamento: Yup.string().required('Escolha uma Forma de pagamento!'),
-  bairro: Yup.string().required('Bairro é obrigatória!'),
-  rua: Yup.string().required('Rua é obrigatória!'),
+  nome: Yup.string().required('Nome é obrigatória!'),
+  telefone: Yup.string().required('Telefone é obrigatória!'),
+  doutor: Yup.string().required('Doutor é obrigatória!'),
+  data: Yup.string().required('Data é obrigatória!'),
+  hora: Yup.string().required('Hora é obrigatória!'),
+
 })
 
 class Cadastro extends Component {
@@ -110,7 +107,7 @@ class Cadastro extends Component {
             {this.renderObj()}
           </Agendados>
 
-          <Form onSubmit={this.handleSubmit}>
+          <Form onSubmit={this.handleSubmit} schema={schema}>
 
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
             <Input name="nome" type="text" maxlength="11" placeholder="Nome Paciente" />
