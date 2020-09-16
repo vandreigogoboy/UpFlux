@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "react-router-dom": "^5.2.0"
+  },
+  "dependencies": {
+    "@lls/react-light-calendar": "^2.2.0",
+    "@rocketseat/unform": "^1.6.2",
+    "history": "^5.0.0",
+    "yup": "^0.29.3"
+  }
+}
