@@ -10,6 +10,10 @@ export const Container = styled.div`
     }
 
 
+    .botao {
+      
+    }
+
     .BotaoPadrao {
     margin: 5px 0 0;
       width: 200px;

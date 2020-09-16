@@ -17,7 +17,7 @@ export function Agendar(nome, telefone, doutor, dataAgendada, horaAgendada) {
   let dia = data.getDate()
   let mes = (data.getMonth() + 1)
   let ano = data.getFullYear()
-  let hora = data.getHours()
+
 
   firebase.database().ref('Agendamentos/').child(ano).child(mes).child(dia).child(nome + "-" + telefone).set({
 

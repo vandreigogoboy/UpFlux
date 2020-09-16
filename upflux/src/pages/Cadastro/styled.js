@@ -106,7 +106,7 @@ export const Agendados = styled.div`
   .Botao {
        
         cursor: pointer;
-        margin-left: 30%;
+        margin-left: 35%;
 
       }
   .agendamentos {
